@@ -13,7 +13,7 @@ mongoose
 
 // Uncomment this code block to test getPolls
 
- const { getPolls } = require("./server/controllers/pollController");
+ const { getPolls } = require("./controllers/pollController");
 
 (async () => {
   console.log("Running getPolls()...");
@@ -23,7 +23,7 @@ mongoose
 
 //Uncomment this code block to test getPoll
 
-const { getPoll } = require("./server/controllers/pollController");
+const { getPoll } = require("./controllers/pollController");
 
 (async () => {
   console.log("Running getPoll()...");
@@ -33,7 +33,7 @@ const { getPoll } = require("./server/controllers/pollController");
 
 // Uncomment this code block to test postPoll
 
-const { postPoll } = require("./server/controllers/pollController");
+const { postPoll } = require("./controllers/pollController");
 
 (async () => {
   console.log("Running postPoll()...");
@@ -53,7 +53,7 @@ const { postPoll } = require("./server/controllers/pollController");
 
 // Uncomment this code block to test postVote
 
-const { postVote } = require("./server/controllers/pollController");
+const { postVote } = require("./controllers/pollController");
 
 (async () => {
   console.log("Running postVote()...");
