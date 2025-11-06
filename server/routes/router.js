@@ -5,8 +5,8 @@ const {getPolls, getPoll, postVote, postPoll} = require("../controllers/pollCont
 // ACTIVITY: Create routes that call controller functions when rrequested
 router.get("/polls", getPolls);
 router.get("/polls/:id", getPoll);  
-router.get("/vote/:id", postVote);
-router.get("/post", postPoll);
+router.post("/vote/:id", postVote);
+router.post("/polls", postPoll);
 
 
 
