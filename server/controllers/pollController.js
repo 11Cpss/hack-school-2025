@@ -13,8 +13,9 @@ const getPolls = async (req, res) => {
 // replace id with req, res in parameters
 const getPoll = async (req, res) => {
   // extract id from req.params
+  const {id} = req.params;
   const poll = await Poll.findById(id);
-
+  
   console.log(`Returning poll ${id}`);
   res.status(200).json(poll); // refactor for 200 status code response
 };
